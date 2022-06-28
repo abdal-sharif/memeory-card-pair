@@ -17,7 +17,7 @@ body{
   padding: 25px;
   border-radius: 10px;
   background: lightgray;
-  box-shadow:  0 1rem 1rem rgba(0, 0, 0, 0.212);
+  box-shadow:  0 1rem 1rem rgba(0, 0, 255, 0.253);
 }
 .cards, .card, .view{
   display: flex;
@@ -116,12 +116,11 @@ body{
 
 .timer{
   position: relative;
-  right: 20px;
   z-index: 2;
   top: 20px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.322);
+  background-color: rgba(0, 0, 0, 0.103);
   box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.068);
   border-radius: 9px;
   padding: auto 2rem;
@@ -141,23 +140,18 @@ body{
   left: 10px;
 }
 
+
+
 .ref{
   position: relative;
+  background-color:   rgba(0, 0, 255, 0.253);
   left:40px;
   border-radius: 9px;
   padding: auto 2rem;
   height: 6vh;
-  width: 30vw;
+  width: 93px;
   border: none;
   cursor: pointer;
+  /* box-shadow: 0 1rem 1rem 1rem rgba(0, 0, 0, 0.144); */
 }
 
-
-
-/* persons */
-
-.persons{
-  position: relative;
-  z-index: auto;
-  text-align: center;
-}
