@@ -59,11 +59,3 @@ cards.forEach(card => {
 });
 
 
-const clickbtn = document.addEventListener(".ref")
-
-clickbtn.addEventListener(".ref",function(){
-    cardOne.removeEventListener("click", flipCard);
-    cardTwo.removeEventListener("click", flipCard);
-    cardOne = cardTwo = "";
-    
-})
