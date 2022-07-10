@@ -1,7 +1,13 @@
+// const navy=document.getElementById(".navy");
+// const black=document.getElementById(".black");
+// const gray=document.getElementById(".gray");
+
 const cards = document.querySelectorAll(".card");
 let matched = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
+
+
 function flipCard({target: clickedCard}) {
     if(cardOne !== clickedCard && !disableDeck) {
         clickedCard.classList.add("flip");
@@ -15,6 +21,8 @@ function flipCard({target: clickedCard}) {
         matchCards(cardOneImg, cardTwoImg);
     }
 }
+
+
 function matchCards(img1, img2) {
     if(img1 === img2) {
         matched++;
@@ -39,6 +47,8 @@ function matchCards(img1, img2) {
         disableDeck = false;
     }, 1200);
 }
+
+
 function shuffleCard() {
     matched = 0;
     disableDeck = false;
@@ -57,5 +67,49 @@ shuffleCard();
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+
+
+function mybutton(){
+   location.reload();
+}
+
+
+
+
+
+const navy=document.getElementById('navy');
+const gray=document.getElementById('gray');
+const white=document.getElementById('dark');
+
+navy.addEventListener('click',e=>{
+    document.body.classList.add('--navy')
+
+    document.body.classList.remove('')
+    document.body.classList.remove('dark-theme')
+});
+
+white.addEventListener('click',e=>{
+    document.body.classList.add('gray-theme')
+
+    document.body.classList.remove('red-theme')
+    document.body.classList.remove('dark-theme')
+});
+
+gray.addEventListener('click',e=>{
+    document.body.classList.add('dark-theme')
+
+    document.body.classList.remove('gray-theme')
+    document.body.classList.remove('red-theme')
+});
+
+
+
+// navy .addEventListener('click',function(){
+//     document.querySelector('.body').classList.remove('gray');
+//     document.querySelector('.body').classList.remove('black');
+//     document.querySelector('.body').classList.add('navy');
+// });
+
 
 
