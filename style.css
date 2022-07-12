@@ -47,6 +47,10 @@ body{
   background: lightgray;
   box-shadow:  0 1rem 1rem rgba(0, 0, 255, 0.253);
 }
+
+
+
+
 .cards, .card, .view{
   display: flex;
   align-items: center;
@@ -71,6 +75,13 @@ body{
 .card.shake{
   animation: shake 0.35s ease-in-out;
 }
+
+.card:hover{
+  background-color: lightgray;
+  border-radius: 7px;
+}
+
+
 @keyframes shake {
   0%, 100%{
     transform: translateX(0);
