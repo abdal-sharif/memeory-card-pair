@@ -1,31 +1,6 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
- :root{
-  --primary-color: rgb(3, 3, 49);
-    --secondary-color:gray;
-    --third-color:white;
-}
-
-
-.navy-theme{
-  --primary-color: white;
-  --secondary-color:black;
-  --third-color:rgb(3, 3, 49);
-}
-
-.gray-theme{
-  --primary-color: gray;
-  --secondary-color:black;
-  --third-color:rgb(3, 3, 49);
-}
-
-
-.white-theme{
-  --primary-color: darkgreen;
-  --secondary-color:gray;
-  --third-color:rgb(3, 3, 49);
-} 
 
 
 *{
@@ -210,43 +185,3 @@ body{
 }
 
 
-
-.colors{
-  position: relative;
-  right: 10px;
-  display: inline-block;
-  padding: auto 2rem;
-  bottom: 20px;
-}
-
-#navy{
-  content: "";
-  width: 20px;
-  height: 20px;
-  clip-path: circle();
-  background-color: rgb(3, 3, 49);
-  box-shadow: 0 1rem 1rem 1rem navy;
-  cursor: pointer;
-}
-
-#white{
-  position: relative;
-  top: 9px;
-  content: "";
-  width: 20px;
-  height: 20px;
-  clip-path: circle();
-  background-color: white;
-  cursor: pointer;
-}
-
-#gray{
-  position: relative;
-  top: 20px;
-  content: "";
-  width: 20px;
-  height: 20px;
-  clip-path: circle();
-  background-color: gray;
-  cursor: pointer;
-}
