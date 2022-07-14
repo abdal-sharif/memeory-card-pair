@@ -47,16 +47,21 @@ body{
   height: calc(100% / 4 - 10px);
   width: calc(100% / 4 - 10px);
 }
+
+/* card hover */
+.card:hover{
+  background-color: lightgray;
+  border-radius: 7px;
+  box-shadow: 0 1rem 1rem 1rem rgba(13, 30, 83, 0.021);
+}
+
+
+/* shake section */
 .card.shake{
   animation: shake 0.35s ease-in-out;
 }
 
-.card:hover{
-  background-color: lightgray;
-  border-radius: 7px;
-}
-
-
+/* shake animation */
 @keyframes shake {
   0%, 100%{
     transform: translateX(0);
@@ -80,11 +85,13 @@ body{
   position: absolute;
   border-radius: 7px;
   background: rgba(128, 128, 128, 0.171);
+  /* rotate or flip section */
   pointer-events: none;
   backface-visibility: hidden;
-  box-shadow: 0 1rem 1rem rgba(0,0,0,0.1);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.137);
   transition: transform 0.25s linear;
 }
+/* card hidden section */
 .card .front-view img{
   width: 19px;
 }
@@ -100,6 +107,8 @@ body{
 .card.flip .front-view{
   transform: rotateY(180deg);
 }
+
+/* media query */
 @media screen and (max-width: 700px) {
   .cards{
     height: 350px;

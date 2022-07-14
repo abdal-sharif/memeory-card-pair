@@ -1,6 +1,3 @@
-// const navy=document.getElementById(".navy");
-// const black=document.getElementById(".black");
-// const gray=document.getElementById(".gray");
 
 const cards = document.querySelectorAll(".card");
 let matched = 0;
@@ -73,43 +70,5 @@ cards.forEach(card => {
 function mybutton(){
    location.reload();
 }
-
-
-
-
-
-const navy=document.getElementById('navy');
-const gray=document.getElementById('gray');
-const white=document.getElementById('dark');
-
-navy.addEventListener('click',e=>{
-    document.body.classList.add('--navy')
-
-    document.body.classList.remove('')
-    document.body.classList.remove('dark-theme')
-});
-
-white.addEventListener('click',e=>{
-    document.body.classList.add('gray-theme')
-
-    document.body.classList.remove('red-theme')
-    document.body.classList.remove('dark-theme')
-});
-
-gray.addEventListener('click',e=>{
-    document.body.classList.add('dark-theme')
-
-    document.body.classList.remove('gray-theme')
-    document.body.classList.remove('red-theme')
-});
-
-
-
-// navy .addEventListener('click',function(){
-//     document.querySelector('.body').classList.remove('gray');
-//     document.querySelector('.body').classList.remove('black');
-//     document.querySelector('.body').classList.add('navy');
-// });
-
 
 
